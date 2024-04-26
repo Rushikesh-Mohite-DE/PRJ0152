@@ -4,7 +4,7 @@ steps:
       config:
         insertStrategy: INSERT
         postSQL: ""
-        preSQL: ""
+        preSQL: "                     "
         testsEnabled: true
         truncateBefore: true
       database: ""
@@ -44,6 +44,27 @@ steps:
                   - columnCounter: bb9d9e94-e5f3-44d6-88f3-12e2f9b13bfc
                     stepCounter: 5f30be68-7ac2-4f12-89c2-dc96e8527402
                 transform: "'2024-03-01 00:00:00.000'"
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f347110a-3f39-4932-b9d0-37975686b500
+              stepCounter: 1d685313-01f9-4bd2-9208-640f436f0ee6
+            config: {}
+            dataType: INT
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: TEST
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: "0"
+                    stepCounter: "0"
+                transform: "{{"
+            systemColumnType: None
+            transform: ""
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:

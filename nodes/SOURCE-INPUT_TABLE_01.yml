@@ -1,0 +1,78 @@
+steps:
+  INPUT_TABLE_01-75ef06c9-1160-41f6-a312-26b62f2f7354:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationName: SOURCE
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 89d11f47-d655-440e-8a1e-928f38c66936
+              stepCounter: 75ef06c9-1160-41f6-a312-26b62f2f7354
+            config: {}
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: DS
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d41cfdf4-4c15-4bf7-8400-b9b3a9ea13e9
+              stepCounter: 75ef06c9-1160-41f6-a312-26b62f2f7354
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: METRIC
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b7320c1b-0fe8-4995-a734-eb7088cadb75
+              stepCounter: 75ef06c9-1160-41f6-a312-26b62f2f7354
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: DIM_COUNTRY
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d6559242-2019-4f32-94e3-7ab1cedb59fb
+              stepCounter: 75ef06c9-1160-41f6-a312-26b62f2f7354
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: MEASURES
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SOURCE', 'INPUT_TABLE_01') }}
+      name: INPUT_TABLE_01
+      schema: ""
+      sqlType: Source
+      table: INPUT_TABLE_01
+      type: sourceInput
+    stepCounter: 75ef06c9-1160-41f6-a312-26b62f2f7354

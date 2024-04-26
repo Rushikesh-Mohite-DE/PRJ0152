@@ -1,0 +1,202 @@
+steps:
+  STREAM_DATA_OPERATIONS1-ea805343-ce38-4154-98c1-859538dcc8ca:
+    operation:
+      config:
+        appendOnly: false
+        initialRows: true
+        redeploymentBehavior: Create At Existing Stream
+        sourceType: Table
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: SOURCE
+      materializationType: stream
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: acc16215-23f1-41f1-a9f4-a23fae0a684b
+              stepCounter: ea805343-ce38-4154-98c1-859538dcc8ca
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: TIMESTAMP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 8f4d6e62-03de-4fda-a172-9694806aa812
+                    stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+                transform: ""
+          - columnReference:
+              columnCounter: f3b6a136-7c2b-4075-8c2d-5f3b7e139147
+              stepCounter: ea805343-ce38-4154-98c1-859538dcc8ca
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RECORD_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 61f72690-3ddf-4678-9e8f-479bd44bd1bc
+                    stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+                transform: ""
+          - columnReference:
+              columnCounter: 5543f8b4-2dbd-4755-8e1e-08fd30c477ef
+              stepCounter: ea805343-ce38-4154-98c1-859538dcc8ca
+            dataType: VARCHAR(255)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b82fcdca-1a59-453f-ab75-e50719016d45
+                    stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+                transform: ""
+          - columnReference:
+              columnCounter: 88fec8b1-09ab-43a3-a644-dedfd259cc3b
+              stepCounter: ea805343-ce38-4154-98c1-859538dcc8ca
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: AGE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f0be8b00-b4e3-4321-8ec0-7ac38834e22f
+                    stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+                transform: ""
+          - columnReference:
+              columnCounter: e303f2a3-0439-40e5-8522-e495e3a73bf7
+              stepCounter: ea805343-ce38-4154-98c1-859538dcc8ca
+            dataType: VARCHAR(255)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CITY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 8dae6909-ef05-476c-b802-aedcb0ea16db
+                    stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+                transform: ""
+          - columnReference:
+              columnCounter: 77c7ee81-b1c4-4905-a91c-4b77588c3fee
+              stepCounter: ea805343-ce38-4154-98c1-859538dcc8ca
+            dataType: VARCHAR(10)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: OPERATION_TYPE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 7b04d247-79f6-4a62-b99c-169348d72abd
+                    stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+                transform: ""
+          - columnReference:
+              columnCounter: 1adb4402-a0df-407c-b641-27ababf452a1
+              stepCounter: ea805343-ce38-4154-98c1-859538dcc8ca
+            dataType: VARCHAR(10)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 7de38ed4-43a7-4822-9ada-59d2fb53bff7
+                    stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+                transform: ""
+          - columnReference:
+              columnCounter: af0ace75-dcf4-43d1-8021-e8d9c403e044
+              stepCounter: ea805343-ce38-4154-98c1-859538dcc8ca
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DML_IDENTIFIER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 80c5ad87-53ae-40b6-8f0b-1b7dc83a595b
+                    stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f60bfc8f-34df-4bc6-a40f-cc0fcb124749
+              stepCounter: ea805343-ce38-4154-98c1-859538dcc8ca
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            metadataAction: true
+            name: METADATA$ACTION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1b448d78-1749-4d92-b062-17b1e5134d86
+              stepCounter: ea805343-ce38-4154-98c1-859538dcc8ca
+            config: {}
+            dataType: boolean
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            metadataIsUpdate: true
+            name: METADATA$ISUPDATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 152f8ff1-1f70-4b7c-90fd-caf7b16594e7
+              stepCounter: ea805343-ce38-4154-98c1-859538dcc8ca
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            metadataRowID: true
+            name: METADATA$ROW_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SOURCE
+                nodeName: DATA_OPERATIONS
+            join:
+              joinCondition: FROM {{ ref('SOURCE', 'DATA_OPERATIONS') }} "DATA_OPERATIONS"
+            name: STREAM_DATA_OPERATIONS1
+            noLinkRefs: []
+      name: STREAM_DATA_OPERATIONS1
+      overrideSQL: false
+      schema: ""
+      sqlType: "153"
+      type: sql
+    stepCounter: ea805343-ce38-4154-98c1-859538dcc8ca

@@ -31,6 +31,7 @@ steps:
         sentimentfunction: false
         summarizefunction: false
         testsEnabled: true
+        translatefunction: false
         truncateBefore: true
         whatsque: null
       database: ""
@@ -81,9 +82,9 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 6ad7ba4b-3b6c-4b50-a162-8dac2bb543af
-                    stepCounter: 5c106385-0dfd-4949-84cc-659be9fd7227
-                transform: ""
+                  - columnCounter: "0"
+                    stepCounter: "0"
+                transform: "{{parameters.HVR_CTRL_LAG_MINUTES}}"
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:

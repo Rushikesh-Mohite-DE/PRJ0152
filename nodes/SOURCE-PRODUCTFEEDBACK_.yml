@@ -1,5 +1,5 @@
 steps:
-  PRODUCTFEEDBACK-92ba3f96-2f14-442a-9af4-0783692a026c:
+  PRODUCTFEEDBACK_-1bc4529b-457c-427d-9d1b-469bb4c4b14c:
     operation:
       database: ""
       dataset: ""
@@ -13,8 +13,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 868f74f1-a1ce-40e7-b6f0-b1fd2e4848ef
-              stepCounter: 92ba3f96-2f14-442a-9af4-0783692a026c
+              columnCounter: 7b3f7eab-78ea-4d79-a3f8-bd18be2188d8
+              stepCounter: 1bc4529b-457c-427d-9d1b-469bb4c4b14c
             config: {}
             dataType: VARCHAR(50)
             defaultValue: ""
@@ -28,8 +28,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: da33235a-e8be-426a-ad81-7b831a297374
-              stepCounter: 92ba3f96-2f14-442a-9af4-0783692a026c
+              columnCounter: b2c0e808-1b4c-473b-9fe5-ead24538af3e
+              stepCounter: 1bc4529b-457c-427d-9d1b-469bb4c4b14c
             config: {}
             dataType: VARCHAR(16777216)
             defaultValue: ""
@@ -43,8 +43,23 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 728cea19-4533-4865-90de-e4db63c78193
-              stepCounter: 92ba3f96-2f14-442a-9af4-0783692a026c
+              columnCounter: 338e1fef-1376-497d-90f3-20be7a3f13b1
+              stepCounter: 1bc4529b-457c-427d-9d1b-469bb4c4b14c
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: REVIEWS
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: aef9a2b7-b947-4755-90f6-413e21d0acc1
+              stepCounter: 1bc4529b-457c-427d-9d1b-469bb4c4b14c
             config: {}
             dataType: VARCHAR(255)
             defaultValue: ""
@@ -58,8 +73,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 553f03ea-5e48-4f46-b484-9f8345544632
-              stepCounter: 92ba3f96-2f14-442a-9af4-0783692a026c
+              columnCounter: f8b519e1-454a-4cfa-9634-41d761cd2bb7
+              stepCounter: 1bc4529b-457c-427d-9d1b-469bb4c4b14c
             config: {}
             dataType: VARCHAR(255)
             defaultValue: ""
@@ -73,8 +88,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 0bcfd2f2-ece3-4059-a906-4721e8dda5a2
-              stepCounter: 92ba3f96-2f14-442a-9af4-0783692a026c
+              columnCounter: f79b9d1c-08fa-4546-8338-4f0b484c213e
+              stepCounter: 1bc4529b-457c-427d-9d1b-469bb4c4b14c
             config: {}
             dataType: VARCHAR(255)
             defaultValue: ""
@@ -83,11 +98,26 @@ steps:
             nullable: true
             primaryKey: false
             uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: bfe32c14-76f2-4df0-9194-6a8baddf5176
+              stepCounter: 1bc4529b-457c-427d-9d1b-469bb4c4b14c
+            config: {}
+            dataType: VARCHAR(300)
+            defaultValue: ""
+            description: ""
+            name: STATEMENTS1
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
         join:
-          joinCondition: FROM {{ ref('SOURCE', 'PRODUCTFEEDBACK') }}
-      name: PRODUCTFEEDBACK
+          joinCondition: FROM {{ ref('SOURCE', 'PRODUCTFEEDBACK_') }}
+      name: PRODUCTFEEDBACK_
       schema: ""
       sqlType: Source
-      table: PRODUCTFEEDBACK
+      table: PRODUCTFEEDBACK_
       type: sourceInput
-    stepCounter: 92ba3f96-2f14-442a-9af4-0783692a026c
+    stepCounter: 1bc4529b-457c-427d-9d1b-469bb4c4b14c

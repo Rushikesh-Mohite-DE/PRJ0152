@@ -1,5 +1,5 @@
 steps:
-  PRODUCTFEEDBACK-92ba3f96-2f14-442a-9af4-0783692a026c:
+  EMP-11a41bed-60fc-408c-8212-f4650e12e737:
     operation:
       database: ""
       dataset: ""
@@ -13,13 +13,13 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 868f74f1-a1ce-40e7-b6f0-b1fd2e4848ef
-              stepCounter: 92ba3f96-2f14-442a-9af4-0783692a026c
+              columnCounter: a3bd55bd-0ab0-4ce4-a256-30e5d98a072a
+              stepCounter: 11a41bed-60fc-408c-8212-f4650e12e737
             config: {}
-            dataType: VARCHAR(50)
+            dataType: NUMBER(38,0)
             defaultValue: ""
             description: ""
-            name: USER_NAME
+            name: EMPID
             nullable: true
             primaryKey: false
             uniqueKey: false
@@ -28,13 +28,13 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: da33235a-e8be-426a-ad81-7b831a297374
-              stepCounter: 92ba3f96-2f14-442a-9af4-0783692a026c
+              columnCounter: 948ecc85-2705-4b94-a18b-4b59ebc3cdf4
+              stepCounter: 11a41bed-60fc-408c-8212-f4650e12e737
             config: {}
-            dataType: VARCHAR(16777216)
+            dataType: VARCHAR(30)
             defaultValue: ""
             description: ""
-            name: REVIEW_CONTENT
+            name: EMPNAME
             nullable: true
             primaryKey: false
             uniqueKey: false
@@ -43,13 +43,13 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 728cea19-4533-4865-90de-e4db63c78193
-              stepCounter: 92ba3f96-2f14-442a-9af4-0783692a026c
+              columnCounter: c904a4c7-c235-47c1-a629-5209b5824c0e
+              stepCounter: 11a41bed-60fc-408c-8212-f4650e12e737
             config: {}
-            dataType: VARCHAR(255)
+            dataType: FLOAT
             defaultValue: ""
             description: ""
-            name: REVIEW_CONTENT_JAPSTRING
+            name: SALARY
             nullable: true
             primaryKey: false
             uniqueKey: false
@@ -58,13 +58,13 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 553f03ea-5e48-4f46-b484-9f8345544632
-              stepCounter: 92ba3f96-2f14-442a-9af4-0783692a026c
+              columnCounter: 0f57b4f2-d07b-42c4-9e3b-319841e3c624
+              stepCounter: 11a41bed-60fc-408c-8212-f4650e12e737
             config: {}
-            dataType: VARCHAR(255)
+            dataType: NUMBER(38,0)
             defaultValue: ""
             description: ""
-            name: REVIEW_CONTENT_RUSSIANSTRING
+            name: AGE
             nullable: true
             primaryKey: false
             uniqueKey: false
@@ -73,21 +73,36 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 0bcfd2f2-ece3-4059-a906-4721e8dda5a2
-              stepCounter: 92ba3f96-2f14-442a-9af4-0783692a026c
+              columnCounter: 7e9bcccf-3f4f-4355-927b-c2c35b19420e
+              stepCounter: 11a41bed-60fc-408c-8212-f4650e12e737
             config: {}
-            dataType: VARCHAR(255)
+            dataType: VARCHAR(10)
             defaultValue: ""
             description: ""
-            name: STATEMENTS
+            name: DEPT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 749cdd2e-f4d1-46ea-81cd-a34b7e5a9163
+              stepCounter: 11a41bed-60fc-408c-8212-f4650e12e737
+            config: {}
+            dataType: VARCHAR(20)
+            defaultValue: ""
+            description: ""
+            name: LOCATION
             nullable: true
             primaryKey: false
             uniqueKey: false
         join:
-          joinCondition: FROM {{ ref('SOURCE', 'PRODUCTFEEDBACK') }}
-      name: PRODUCTFEEDBACK
+          joinCondition: FROM {{ ref('SOURCE', 'EMP') }}
+      name: EMP
       schema: ""
       sqlType: Source
-      table: PRODUCTFEEDBACK
+      table: EMP
       type: sourceInput
-    stepCounter: 92ba3f96-2f14-442a-9af4-0783692a026c
+    stepCounter: 11a41bed-60fc-408c-8212-f4650e12e737

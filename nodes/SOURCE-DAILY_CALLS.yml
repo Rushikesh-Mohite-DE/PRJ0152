@@ -1,5 +1,5 @@
 steps:
-  PRODUCTFEEDBACK-92ba3f96-2f14-442a-9af4-0783692a026c:
+  DAILY_CALLS-932384c2-2107-4780-b03c-e4e432b202c9:
     operation:
       database: ""
       dataset: ""
@@ -13,13 +13,13 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 868f74f1-a1ce-40e7-b6f0-b1fd2e4848ef
-              stepCounter: 92ba3f96-2f14-442a-9af4-0783692a026c
+              columnCounter: e48729c3-7736-47df-a9a3-2124154e3d2c
+              stepCounter: 932384c2-2107-4780-b03c-e4e432b202c9
             config: {}
-            dataType: VARCHAR(50)
+            dataType: DATE
             defaultValue: ""
             description: ""
-            name: USER_NAME
+            name: DATE
             nullable: true
             primaryKey: false
             uniqueKey: false
@@ -28,13 +28,13 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: da33235a-e8be-426a-ad81-7b831a297374
-              stepCounter: 92ba3f96-2f14-442a-9af4-0783692a026c
+              columnCounter: a6de77b6-69c0-4707-9d6a-19afa7c0b530
+              stepCounter: 932384c2-2107-4780-b03c-e4e432b202c9
             config: {}
-            dataType: VARCHAR(16777216)
+            dataType: VARIANT
             defaultValue: ""
             description: ""
-            name: REVIEW_CONTENT
+            name: CALL_CENTER
             nullable: true
             primaryKey: false
             uniqueKey: false
@@ -43,13 +43,13 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 728cea19-4533-4865-90de-e4db63c78193
-              stepCounter: 92ba3f96-2f14-442a-9af4-0783692a026c
+              columnCounter: 4158bb23-5576-47d6-97c7-8cbb4249f138
+              stepCounter: 932384c2-2107-4780-b03c-e4e432b202c9
             config: {}
-            dataType: VARCHAR(255)
+            dataType: VARIANT
             defaultValue: ""
             description: ""
-            name: REVIEW_CONTENT_JAPSTRING
+            name: CC_GROUP
             nullable: true
             primaryKey: false
             uniqueKey: false
@@ -58,13 +58,13 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 553f03ea-5e48-4f46-b484-9f8345544632
-              stepCounter: 92ba3f96-2f14-442a-9af4-0783692a026c
+              columnCounter: a8ca3bb6-80eb-401d-ab54-948365d2f556
+              stepCounter: 932384c2-2107-4780-b03c-e4e432b202c9
             config: {}
-            dataType: VARCHAR(255)
+            dataType: VARIANT
             defaultValue: ""
             description: ""
-            name: REVIEW_CONTENT_RUSSIANSTRING
+            name: PRODUCT
             nullable: true
             primaryKey: false
             uniqueKey: false
@@ -73,21 +73,21 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 0bcfd2f2-ece3-4059-a906-4721e8dda5a2
-              stepCounter: 92ba3f96-2f14-442a-9af4-0783692a026c
+              columnCounter: 1ff2d281-8cda-411e-9d24-d9d694257568
+              stepCounter: 932384c2-2107-4780-b03c-e4e432b202c9
             config: {}
-            dataType: VARCHAR(255)
+            dataType: NUMBER(18,0)
             defaultValue: ""
             description: ""
-            name: STATEMENTS
+            name: CALL_COUNT
             nullable: true
             primaryKey: false
             uniqueKey: false
         join:
-          joinCondition: FROM {{ ref('SOURCE', 'PRODUCTFEEDBACK') }}
-      name: PRODUCTFEEDBACK
+          joinCondition: FROM {{ ref('SOURCE', 'DAILY_CALLS') }}
+      name: DAILY_CALLS
       schema: ""
       sqlType: Source
-      table: PRODUCTFEEDBACK
+      table: DAILY_CALLS
       type: sourceInput
-    stepCounter: 92ba3f96-2f14-442a-9af4-0783692a026c
+    stepCounter: 932384c2-2107-4780-b03c-e4e432b202c9

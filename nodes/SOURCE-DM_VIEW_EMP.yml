@@ -1,0 +1,177 @@
+steps:
+  DM_VIEW_EMP-6fcefe10-d017-452f-9604-f3b3188c0eba:
+    operation:
+      config:
+        appendOnly: "true"
+        capUpdate: false
+        clsKey: None
+        clsKeyCus: ""
+        dmlCol:
+          columnCounter: cb32fe14-bf16-4dd0-89d3-22770598dbc7
+          stepCounter: 6fcefe10-d017-452f-9604-f3b3188c0eba
+        dmlDelete: D
+        dmlInsert: I
+        dmlUpdate: U
+        flagSrcStream: false
+        initialRows: true
+        insertOnly: false
+        orderBy:
+          items:
+            - colName:
+                columnCounter: eda251c0-9308-40a0-b30b-cc6dd43f75b7
+                stepCounter: 6fcefe10-d017-452f-9604-f3b3188c0eba
+              sortOrd: asc
+        orderByDateTime:
+          items:
+            - colNameDate: null
+              colNameTimestamp: null
+              sortOrdDateTimestamp: null
+        partitionBy:
+          items:
+            - partColName:
+                columnCounter: 7e2a0fbb-97c2-4d65-b3d2-f90ed2016dba
+                stepCounter: 6fcefe10-d017-452f-9604-f3b3188c0eba
+        postSQL: ""
+        preSQL: ""
+        predTask: ""
+        recordVersioning: Datetime Column
+        retainLastNonDeleteFlag: true
+        rootTask: ""
+        scheduleCRON: 5 0-23 * * * America/Los_Angeles
+        schedulePeriod: "1"
+        schedulePeriodOption: Minutes
+        schedulingMode: Serverless Task
+        serverlessSize: XSMALL
+        softDeleteFlag: false
+        sourceType: Table
+        whName: <WAREHOUSE_NAME>
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: SOURCE
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 7e2a0fbb-97c2-4d65-b3d2-f90ed2016dba
+              stepCounter: 6fcefe10-d017-452f-9604-f3b3188c0eba
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: EMPID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a3bd55bd-0ab0-4ce4-a256-30e5d98a072a
+                    stepCounter: 11a41bed-60fc-408c-8212-f4650e12e737
+                transform: ""
+          - columnReference:
+              columnCounter: cb32fe14-bf16-4dd0-89d3-22770598dbc7
+              stepCounter: 6fcefe10-d017-452f-9604-f3b3188c0eba
+            dataType: VARCHAR(30)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: EMPNAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 948ecc85-2705-4b94-a18b-4b59ebc3cdf4
+                    stepCounter: 11a41bed-60fc-408c-8212-f4650e12e737
+                transform: ""
+          - columnReference:
+              columnCounter: d91d5a21-6f18-4681-920a-d9ce5d90df3c
+              stepCounter: 6fcefe10-d017-452f-9604-f3b3188c0eba
+            dataType: FLOAT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SALARY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c904a4c7-c235-47c1-a629-5209b5824c0e
+                    stepCounter: 11a41bed-60fc-408c-8212-f4650e12e737
+                transform: ""
+          - columnReference:
+              columnCounter: 7eb1182d-abfa-4c86-b887-2b0c59d362d2
+              stepCounter: 6fcefe10-d017-452f-9604-f3b3188c0eba
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: AGE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0f57b4f2-d07b-42c4-9e3b-319841e3c624
+                    stepCounter: 11a41bed-60fc-408c-8212-f4650e12e737
+                transform: ""
+          - columnReference:
+              columnCounter: ff4501ca-48bb-4cfc-b1cb-4f99ab86e2a7
+              stepCounter: 6fcefe10-d017-452f-9604-f3b3188c0eba
+            dataType: VARCHAR(10)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DEPT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 7e9bcccf-3f4f-4355-927b-c2c35b19420e
+                    stepCounter: 11a41bed-60fc-408c-8212-f4650e12e737
+                transform: ""
+          - columnReference:
+              columnCounter: a907367f-007a-4a91-9c60-3b4224f4fb60
+              stepCounter: 6fcefe10-d017-452f-9604-f3b3188c0eba
+            dataType: VARCHAR(20)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LOCATION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 749cdd2e-f4d1-46ea-81cd-a34b7e5a9163
+                    stepCounter: 11a41bed-60fc-408c-8212-f4650e12e737
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: eda251c0-9308-40a0-b30b-cc6dd43f75b7
+              stepCounter: 6fcefe10-d017-452f-9604-f3b3188c0eba
+            config: {}
+            dataType: timestamp
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            hmUpdTs: true
+            name: DM_UPDATE_TIMESTAMP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: current_timestamp::timestamp_ntz
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SOURCE
+                nodeName: EMP
+            join:
+              joinCondition: FROM {{ ref('SOURCE', 'EMP') }} "EMP"
+            name: DM_VIEW_EMP
+            noLinkRefs: []
+      name: DM_VIEW_EMP
+      overrideSQL: false
+      schema: ""
+      sqlType: "282"
+      type: sql
+    stepCounter: 6fcefe10-d017-452f-9604-f3b3188c0eba

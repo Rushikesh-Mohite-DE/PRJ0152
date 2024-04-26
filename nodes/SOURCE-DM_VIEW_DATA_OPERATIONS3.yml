@@ -1,0 +1,213 @@
+steps:
+  DM_VIEW_DATA_OPERATIONS3-df92e93d-77b3-4904-8129-3a84877be09c:
+    operation:
+      config:
+        capUpdate: false
+        clusterKey: true
+        clusterKeyConfig:
+          items:
+            - columnName:
+                columnCounter: e7b14923-9df0-4a57-a9ac-a4875cf3d51e
+                stepCounter: df92e93d-77b3-4904-8129-3a84877be09c
+            - columnName:
+                columnCounter: 786b5652-0c47-4ebc-9482-1336db73cda6
+                stepCounter: df92e93d-77b3-4904-8129-3a84877be09c
+        clusterKeyConfigExpressions:
+          items:
+            - {}
+        clusterKeyExpressions: false
+        devMode: false
+        dmlCol:
+          columnCounter: c74024bb-4f35-4935-a155-8f48605f634f
+          stepCounter: df92e93d-77b3-4904-8129-3a84877be09c
+        dmlDelete: "0"
+        dmlInsert: "1"
+        dmlUpdate: U
+        flagSrcStream: false
+        initialRows: false
+        insertOnly: false
+        orderBy:
+          items:
+            - colName:
+                columnCounter: 24278ad6-6dbe-4ffe-8f23-d03d49286df9
+                stepCounter: df92e93d-77b3-4904-8129-3a84877be09c
+              sortOrd: asc
+        orderByDateTime:
+          items:
+            - {}
+        partitionBy:
+          items:
+            - partColName:
+                columnCounter: 3790f86f-1b24-4e9f-affe-3908d884a0a2
+                stepCounter: df92e93d-77b3-4904-8129-3a84877be09c
+        predTask: ""
+        recordVersioning: Datetime Column
+        redeploymentBehavior: Create At Existing Stream
+        retainLastNonDeleteFlag: false
+        rootTask: ""
+        scheduleCRON: 5 0-23 * * * America/Los_Angeles
+        schedulePeriod: "60"
+        schedulePeriodOption: Minutes
+        schedulingMode: Serverless Task
+        serverlessSize: XSMALL
+        softDeleteFlag: false
+        sourceType: View
+        whName: <WAREHOUSE_NAME>
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: SOURCE
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 24278ad6-6dbe-4ffe-8f23-d03d49286df9
+              stepCounter: df92e93d-77b3-4904-8129-3a84877be09c
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: TIMESTAMP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9e4cc848-52b7-4e32-9980-5ce6954c58dd
+                    stepCounter: 81087296-cc89-4c35-a11b-56b342c22932
+                transform: ""
+          - columnReference:
+              columnCounter: 3790f86f-1b24-4e9f-affe-3908d884a0a2
+              stepCounter: df92e93d-77b3-4904-8129-3a84877be09c
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RECORD_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2dfb9bcc-fb9e-4b40-8b90-3223ba2f333a
+                    stepCounter: 81087296-cc89-4c35-a11b-56b342c22932
+                transform: ""
+          - columnReference:
+              columnCounter: 3f6fa5a3-b839-44e7-a512-a445411f5570
+              stepCounter: df92e93d-77b3-4904-8129-3a84877be09c
+            dataType: VARCHAR(255)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f9aef715-2094-4271-bddb-bb407fdd50aa
+                    stepCounter: 81087296-cc89-4c35-a11b-56b342c22932
+                transform: ""
+          - columnReference:
+              columnCounter: e7b14923-9df0-4a57-a9ac-a4875cf3d51e
+              stepCounter: df92e93d-77b3-4904-8129-3a84877be09c
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: AGE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: e74625b5-e7a6-4b9a-82fa-2260d0be5a13
+                    stepCounter: 81087296-cc89-4c35-a11b-56b342c22932
+                transform: ""
+          - columnReference:
+              columnCounter: 786b5652-0c47-4ebc-9482-1336db73cda6
+              stepCounter: df92e93d-77b3-4904-8129-3a84877be09c
+            dataType: VARCHAR(255)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CITY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f1d5198b-1357-49e0-8539-10821b03247e
+                    stepCounter: 81087296-cc89-4c35-a11b-56b342c22932
+                transform: ""
+          - columnReference:
+              columnCounter: a1e46eff-003a-449e-9de9-72e73aba291f
+              stepCounter: df92e93d-77b3-4904-8129-3a84877be09c
+            dataType: VARCHAR(10)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: OPERATION_TYPE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 35b536ad-9add-4957-ae9e-6c6263beeeab
+                    stepCounter: 81087296-cc89-4c35-a11b-56b342c22932
+                transform: ""
+          - columnReference:
+              columnCounter: 6106b66b-2a61-4871-8718-17b26c5441db
+              stepCounter: df92e93d-77b3-4904-8129-3a84877be09c
+            dataType: VARCHAR(10)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: fb8779fb-4e4c-4683-849e-c72c96f29dbe
+                    stepCounter: 81087296-cc89-4c35-a11b-56b342c22932
+                transform: ""
+          - columnReference:
+              columnCounter: c74024bb-4f35-4935-a155-8f48605f634f
+              stepCounter: df92e93d-77b3-4904-8129-3a84877be09c
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DML_IDENTIFIER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9817fb49-6ad0-49bd-89af-fe9b9194d213
+                    stepCounter: 81087296-cc89-4c35-a11b-56b342c22932
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c53b2af1-44b1-4577-9582-c1f0676f8d5c
+              stepCounter: df92e93d-77b3-4904-8129-3a84877be09c
+            config: {}
+            dataType: timestamp
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            hmUpdTs: true
+            name: DM_UPDATE_TIMESTAMP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: current_timestamp::timestamp_ntz
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SOURCE
+                nodeName: V_DATA_OPERATIONS
+            join:
+              joinCondition: FROM {{ ref('SOURCE', 'V_DATA_OPERATIONS') }} "V_DATA_OPERATIONS"
+            name: DM_VIEW_DATA_OPERATIONS3
+            noLinkRefs: []
+      name: DM_VIEW_DATA_OPERATIONS3
+      overrideSQL: false
+      schema: ""
+      sqlType: "291"
+      type: sql
+    stepCounter: df92e93d-77b3-4904-8129-3a84877be09c

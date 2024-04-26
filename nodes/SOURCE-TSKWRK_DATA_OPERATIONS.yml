@@ -1,0 +1,176 @@
+steps:
+  TSKWRK_DATA_OPERATIONS-370a5fd4-5a56-49c9-8cde-4ba7d32f9607:
+    operation:
+      config:
+        clusterKey: true
+        clusterKeyConfig:
+          items:
+            - columnName:
+                columnCounter: 2838f9ad-599e-427e-b64d-bc45cc43f897
+                stepCounter: 370a5fd4-5a56-49c9-8cde-4ba7d32f9607
+            - columnName:
+                columnCounter: 465bd175-3eed-460c-8dc7-e00b1e8ad522
+                stepCounter: 370a5fd4-5a56-49c9-8cde-4ba7d32f9607
+        clusterKeyConfigExpressions:
+          items:
+            - {}
+        clusterKeyExpressions: false
+        devMode: false
+        flagSrcStream: false
+        groupByAll: false
+        insertStrategy: UNION
+        multiStreamBehavior: AND
+        orderby: false
+        orderbycolumn:
+          items:
+            - {}
+        predTask: DATA_TRANSFORMATION_ROOT_TASK
+        rootTask: DATA_TRANSFORMATION_ROOT_TASK
+        scheduleCRON: 5 0-23 * * * America/Los_Angeles
+        schedulePeriod: "1"
+        schedulePeriodOption: Minutes
+        schedulingMode: Serverless Task
+        selectDistinct: false
+        serverlessSize: XSMALL
+        truncateBefore: false
+        whName: <WAREHOUSE_NAME>
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: SOURCE
+      materializationType: task
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: fac3aa7a-9fcc-497b-9926-2cb6e82e7030
+              stepCounter: 370a5fd4-5a56-49c9-8cde-4ba7d32f9607
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: TIMESTAMP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 8f4d6e62-03de-4fda-a172-9694806aa812
+                    stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+                transform: ""
+          - columnReference:
+              columnCounter: 2838f9ad-599e-427e-b64d-bc45cc43f897
+              stepCounter: 370a5fd4-5a56-49c9-8cde-4ba7d32f9607
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RECORD_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 61f72690-3ddf-4678-9e8f-479bd44bd1bc
+                    stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+                transform: ""
+          - columnReference:
+              columnCounter: 465bd175-3eed-460c-8dc7-e00b1e8ad522
+              stepCounter: 370a5fd4-5a56-49c9-8cde-4ba7d32f9607
+            dataType: VARCHAR(255)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b82fcdca-1a59-453f-ab75-e50719016d45
+                    stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+                transform: ""
+          - columnReference:
+              columnCounter: db0690ce-d772-4d28-8cb6-f05dc1e7dd57
+              stepCounter: 370a5fd4-5a56-49c9-8cde-4ba7d32f9607
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: AGE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f0be8b00-b4e3-4321-8ec0-7ac38834e22f
+                    stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+                transform: ""
+          - columnReference:
+              columnCounter: 1bc15125-1cc7-4317-b053-85a54fe202cc
+              stepCounter: 370a5fd4-5a56-49c9-8cde-4ba7d32f9607
+            dataType: VARCHAR(255)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CITY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 8dae6909-ef05-476c-b802-aedcb0ea16db
+                    stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+                transform: ""
+          - columnReference:
+              columnCounter: d776fb39-34e2-44d3-ac04-9eaf38b2445d
+              stepCounter: 370a5fd4-5a56-49c9-8cde-4ba7d32f9607
+            dataType: VARCHAR(10)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: OPERATION_TYPE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 7b04d247-79f6-4a62-b99c-169348d72abd
+                    stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+                transform: ""
+          - columnReference:
+              columnCounter: d153ff40-53c8-4ff8-bcff-3675a4a53cf4
+              stepCounter: 370a5fd4-5a56-49c9-8cde-4ba7d32f9607
+            dataType: VARCHAR(10)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 7de38ed4-43a7-4822-9ada-59d2fb53bff7
+                    stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+                transform: ""
+          - columnReference:
+              columnCounter: 9191706d-0951-4652-9844-10eae71af54b
+              stepCounter: 370a5fd4-5a56-49c9-8cde-4ba7d32f9607
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DML_IDENTIFIER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 80c5ad87-53ae-40b6-8f0b-1b7dc83a595b
+                    stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SOURCE
+                nodeName: DATA_OPERATIONS
+            join:
+              joinCondition: FROM {{ ref('SOURCE', 'DATA_OPERATIONS') }} "DATA_OPERATIONS"
+            name: TSKWRK_DATA_OPERATIONS
+            noLinkRefs: []
+      name: TSKWRK_DATA_OPERATIONS
+      overrideSQL: false
+      schema: ""
+      sqlType: "151"
+      type: sql
+    stepCounter: 370a5fd4-5a56-49c9-8cde-4ba7d32f9607

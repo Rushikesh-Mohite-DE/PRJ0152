@@ -1,0 +1,138 @@
+steps:
+  DATA_OPERATIONS-ff090776-5c2c-47df-b720-1a0f71091c69:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationName: SOURCE
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 8f4d6e62-03de-4fda-a172-9694806aa812
+              stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+            config: {}
+            dataType: TIMESTAMP_NTZ(9)
+            defaultValue: ""
+            description: ""
+            name: TIMESTAMP
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 61f72690-3ddf-4678-9e8f-479bd44bd1bc
+              stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: RECORD_ID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b82fcdca-1a59-453f-ab75-e50719016d45
+              stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+            config: {}
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: NAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f0be8b00-b4e3-4321-8ec0-7ac38834e22f
+              stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: AGE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 8dae6909-ef05-476c-b802-aedcb0ea16db
+              stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+            config: {}
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: CITY
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7b04d247-79f6-4a62-b99c-169348d72abd
+              stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+            config: {}
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: OPERATION_TYPE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7de38ed4-43a7-4822-9ada-59d2fb53bff7
+              stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+            config: {}
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: SOURCE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 80c5ad87-53ae-40b6-8f0b-1b7dc83a595b
+              stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: DML_IDENTIFIER
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SOURCE', 'DATA_OPERATIONS') }}
+      name: DATA_OPERATIONS
+      schema: ""
+      sqlType: Source
+      table: DATA_OPERATIONS
+      type: sourceInput
+    stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
