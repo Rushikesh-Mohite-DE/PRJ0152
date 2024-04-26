@@ -14,7 +14,7 @@ locations:
     mappingDefinitions:
       "135":
         database: QA
-        schema: ML
+        schema: ML_QA
       "51":
         database: QA
         schema: ML_QA
@@ -22,7 +22,7 @@ locations:
     mappingDefinitions:
       "135":
         database: QA
-        schema: ML
+        schema: ML_QA
       "51":
         database: QA
         schema: ML_QA
