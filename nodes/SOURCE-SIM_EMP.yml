@@ -1,0 +1,155 @@
+steps:
+  SIM_EMP-ea285fa8-3710-446e-b9d0-194d103d0dde:
+    operation:
+      config:
+        appendOnly: false
+        clusterKey: true
+        clusterKeyConfig:
+          items:
+            - columnName:
+                columnCounter: 7eb58ba0-c829-416f-be94-e798e61e841b
+                stepCounter: ea285fa8-3710-446e-b9d0-194d103d0dde
+        clusterKeyConfigExpressions:
+          items:
+            - {}
+        clusterKeyExpressions: false
+        devMode: false
+        flagSrcStream: false
+        groupByAll: false
+        initialRows: true
+        loadType: Merge
+        orderBy:
+          items:
+            - {}
+        partitionBy:
+          items:
+            - {}
+        predTask: DATA_TRANSFORMATION_ROOT_TASK
+        redeploymentBehavior: Create At Existing Stream
+        rootTask: DATA_TRANSFORMATION_ROOT_TASK
+        scheduleCRON: 5 0-23 * * * America/Los_Angeles
+        schedulePeriod: "1"
+        schedulePeriodOption: Minutes
+        schedulingMode: Serverless Task
+        selectDistinct: false
+        serverlessSize: XSMALL
+        sourceType: Table
+        whName: COMPUTE_WH
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: SOURCE
+      materializationType: task
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7eb58ba0-c829-416f-be94-e798e61e841b
+              stepCounter: ea285fa8-3710-446e-b9d0-194d103d0dde
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: EMPID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a3bd55bd-0ab0-4ce4-a256-30e5d98a072a
+                    stepCounter: 11a41bed-60fc-408c-8212-f4650e12e737
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: a687ceb5-e8d6-4984-a91b-adee66f23af2
+              stepCounter: ea285fa8-3710-446e-b9d0-194d103d0dde
+            dataType: VARCHAR(30)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: EMPNAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 948ecc85-2705-4b94-a18b-4b59ebc3cdf4
+                    stepCounter: 11a41bed-60fc-408c-8212-f4650e12e737
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 0564e07a-f933-4ed2-bc1d-302c669f0a98
+              stepCounter: ea285fa8-3710-446e-b9d0-194d103d0dde
+            dataType: FLOAT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SALARY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c904a4c7-c235-47c1-a629-5209b5824c0e
+                    stepCounter: 11a41bed-60fc-408c-8212-f4650e12e737
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 86b1ab79-b751-4f64-9218-25caec8f0d20
+              stepCounter: ea285fa8-3710-446e-b9d0-194d103d0dde
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: AGE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0f57b4f2-d07b-42c4-9e3b-319841e3c624
+                    stepCounter: 11a41bed-60fc-408c-8212-f4650e12e737
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 07e34a6c-30d1-46f7-81d1-5f4f34293f40
+              stepCounter: ea285fa8-3710-446e-b9d0-194d103d0dde
+            dataType: VARCHAR(10)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DEPT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 7e9bcccf-3f4f-4355-927b-c2c35b19420e
+                    stepCounter: 11a41bed-60fc-408c-8212-f4650e12e737
+                transform: ""
+          - appliedColumnTests: {}
+            columnReference:
+              columnCounter: 526130c9-01b3-4913-9924-3815c143bdc7
+              stepCounter: ea285fa8-3710-446e-b9d0-194d103d0dde
+            dataType: VARCHAR(20)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LOCATION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 749cdd2e-f4d1-46ea-81cd-a34b7e5a9163
+                    stepCounter: 11a41bed-60fc-408c-8212-f4650e12e737
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SOURCE
+                nodeName: EMP
+            join:
+              joinCondition: FROM {{ ref('SOURCE', 'EMP') }} "EMP"
+            name: SIM_EMP
+            noLinkRefs: []
+      name: SIM_EMP
+      overrideSQL: false
+      schema: ""
+      sqlType: "152"
+      type: sql
+    stepCounter: ea285fa8-3710-446e-b9d0-194d103d0dde

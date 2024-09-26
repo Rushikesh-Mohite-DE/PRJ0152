@@ -1,0 +1,93 @@
+steps:
+  PRODUCTFEEDBACK-92ba3f96-2f14-442a-9af4-0783692a026c:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationName: SOURCE
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 868f74f1-a1ce-40e7-b6f0-b1fd2e4848ef
+              stepCounter: 92ba3f96-2f14-442a-9af4-0783692a026c
+            config: {}
+            dataType: VARCHAR(50)
+            defaultValue: ""
+            description: ""
+            name: USER_NAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: da33235a-e8be-426a-ad81-7b831a297374
+              stepCounter: 92ba3f96-2f14-442a-9af4-0783692a026c
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: REVIEW_CONTENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 728cea19-4533-4865-90de-e4db63c78193
+              stepCounter: 92ba3f96-2f14-442a-9af4-0783692a026c
+            config: {}
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: REVIEW_CONTENT_JAPSTRING
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 553f03ea-5e48-4f46-b484-9f8345544632
+              stepCounter: 92ba3f96-2f14-442a-9af4-0783692a026c
+            config: {}
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: REVIEW_CONTENT_RUSSIANSTRING
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 0bcfd2f2-ece3-4059-a906-4721e8dda5a2
+              stepCounter: 92ba3f96-2f14-442a-9af4-0783692a026c
+            config: {}
+            dataType: VARCHAR(255)
+            defaultValue: ""
+            description: ""
+            name: STATEMENTS
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SOURCE', 'PRODUCTFEEDBACK') }}
+      name: PRODUCTFEEDBACK
+      schema: ""
+      sqlType: Source
+      table: PRODUCTFEEDBACK
+      type: sourceInput
+    stepCounter: 92ba3f96-2f14-442a-9af4-0783692a026c

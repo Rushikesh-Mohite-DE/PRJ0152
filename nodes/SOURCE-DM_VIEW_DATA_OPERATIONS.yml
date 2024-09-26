@@ -1,0 +1,221 @@
+steps:
+  DM_VIEW_DATA_OPERATIONS-26371201-d617-4be3-bdcd-8e87c70c0605:
+    operation:
+      config:
+        appendOnly: "true"
+        capUpdate: false
+        clsKey: Update Timestamp and Primary Key from Source
+        clsKeyCus: bl,jklkjl
+        clusterKey: false
+        clusterKeyConfig:
+          items:
+            - columnName:
+                columnCounter: d19f9889-eb44-40af-a66a-6fec21aabef7
+                stepCounter: 26371201-d617-4be3-bdcd-8e87c70c0605
+        clusterKeyConfigExpressions:
+          items:
+            - columnNameExpressions:
+                columnCounter: d19f9889-eb44-40af-a66a-6fec21aabef7
+                stepCounter: 26371201-d617-4be3-bdcd-8e87c70c0605
+              sqlExpression: trunc(age, -5)
+        clusterKeyExpressions: false
+        devMode: false
+        dmlCol:
+          columnCounter: 9cedc077-d39b-4680-b28c-4ad259aa0f58
+          stepCounter: 26371201-d617-4be3-bdcd-8e87c70c0605
+        dmlDelete: "0"
+        dmlInsert: "1"
+        dmlUpdate: "7"
+        flagSrcStream: true
+        groupByAll: false
+        initialRows: true
+        insertOnly: false
+        orderBy:
+          items:
+            - colName:
+                columnCounter: 1af9020e-0046-4550-9c4d-a40f3b5c99b8
+                stepCounter: 26371201-d617-4be3-bdcd-8e87c70c0605
+              sortOrd: asc
+        orderByDateTime:
+          items:
+            - colNameDate: null
+              colNameTimestamp: null
+        partitionBy:
+          items:
+            - partColName:
+                columnCounter: 05288e24-e4b0-4e86-95a2-fb49a4c2d028
+                stepCounter: 26371201-d617-4be3-bdcd-8e87c70c0605
+        postSQL: ""
+        preSQL: ""
+        predTask: ""
+        recordVersioning: Datetime Column
+        redeploymentBehavior: Create or Replace
+        retainLastNonDeleteFlag: false
+        rootTask: ""
+        scheduleCRON: 5 0-23 * * * America/Los_Angeles
+        schedulePeriod: "2"
+        schedulePeriodOption: CRON
+        schedulingMode: Serverless Task
+        selectDistinct: false
+        serverlessSize: XSMALL
+        softDeleteFlag: false
+        sourceType: View
+        whName: COMPUTE_WH
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: SOURCE
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 1af9020e-0046-4550-9c4d-a40f3b5c99b8
+              stepCounter: 26371201-d617-4be3-bdcd-8e87c70c0605
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: TIMESTAMP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 8f4d6e62-03de-4fda-a172-9694806aa812
+                    stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+                transform: ""
+          - columnReference:
+              columnCounter: 05288e24-e4b0-4e86-95a2-fb49a4c2d028
+              stepCounter: 26371201-d617-4be3-bdcd-8e87c70c0605
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: RECORD_ID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 61f72690-3ddf-4678-9e8f-479bd44bd1bc
+                    stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+                transform: ""
+          - columnReference:
+              columnCounter: 64387d25-3739-428e-b60a-2c3667538ae1
+              stepCounter: 26371201-d617-4be3-bdcd-8e87c70c0605
+            dataType: VARCHAR(255)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: NAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b82fcdca-1a59-453f-ab75-e50719016d45
+                    stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+                transform: ""
+          - columnReference:
+              columnCounter: d19f9889-eb44-40af-a66a-6fec21aabef7
+              stepCounter: 26371201-d617-4be3-bdcd-8e87c70c0605
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: AGE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f0be8b00-b4e3-4321-8ec0-7ac38834e22f
+                    stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+                transform: ""
+          - columnReference:
+              columnCounter: f8e87bd0-c6c4-4aa6-87ee-2003eca0e6d3
+              stepCounter: 26371201-d617-4be3-bdcd-8e87c70c0605
+            dataType: VARCHAR(255)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: CITY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 8dae6909-ef05-476c-b802-aedcb0ea16db
+                    stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+                transform: ""
+          - columnReference:
+              columnCounter: ef9085b1-d0cd-4415-988b-9c1d0be6803e
+              stepCounter: 26371201-d617-4be3-bdcd-8e87c70c0605
+            dataType: VARCHAR(10)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: OPERATION_TYPE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 7b04d247-79f6-4a62-b99c-169348d72abd
+                    stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+                transform: ""
+          - columnReference:
+              columnCounter: 1beabd8f-152c-4c5e-8fd6-34dddf0237a8
+              stepCounter: 26371201-d617-4be3-bdcd-8e87c70c0605
+            dataType: VARCHAR(10)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SOURCE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 7de38ed4-43a7-4822-9ada-59d2fb53bff7
+                    stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+                transform: ""
+          - columnReference:
+              columnCounter: 9cedc077-d39b-4680-b28c-4ad259aa0f58
+              stepCounter: 26371201-d617-4be3-bdcd-8e87c70c0605
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DML_IDENTIFIER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 80c5ad87-53ae-40b6-8f0b-1b7dc83a595b
+                    stepCounter: ff090776-5c2c-47df-b720-1a0f71091c69
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: adb4aff1-c5d4-4d36-937a-6ec6f06a0262
+              stepCounter: 26371201-d617-4be3-bdcd-8e87c70c0605
+            config: {}
+            dataType: timestamp
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            hmUpdTs: true
+            name: DM_UPDATE_TIMESTAMP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: current_timestamp::timestamp_ntz
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SOURCE
+                nodeName: DATA_OPERATIONS
+            join:
+              joinCondition: FROM {{ ref('SOURCE', 'DATA_OPERATIONS') }} "DATA_OPERATIONS"
+            name: DM_VIEW_DATA_OPERATIONS
+            noLinkRefs: []
+      name: DM_VIEW_DATA_OPERATIONS
+      overrideSQL: false
+      schema: ""
+      sqlType: "291"
+      type: sql
+    stepCounter: 26371201-d617-4be3-bdcd-8e87c70c0605

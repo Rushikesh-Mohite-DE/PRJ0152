@@ -1,0 +1,323 @@
+steps:
+  VIEW__INPUT_TABLE-4e3d0ca6-ed2f-4202-b390-5f7eb89dd771:
+    operation:
+      config:
+        cexby:
+          items:
+            - caskque: null
+        continuous_dimensions: true
+        exby:
+          items:
+            - {}
+        extractfunction: true
+        insertStrategy: INSERT
+        labelcol: null
+        metriccol: null
+        orderby: false
+        orderbycolumn:
+          items:
+            - {}
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: SOURCE
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: ff215057-165e-4144-b27c-016461063ded
+              stepCounter: 4e3d0ca6-ed2f-4202-b390-5f7eb89dd771
+            dataType: DATE
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DS
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f2d1451d-e013-486e-acde-ef233435ae6d
+                    stepCounter: deb65676-39aa-492d-96d6-5bfec1fd920d
+                transform: ""
+          - columnReference:
+              columnCounter: 81c57c8f-6840-4ab2-bb31-a86e6bbab777
+              stepCounter: 4e3d0ca6-ed2f-4202-b390-5f7eb89dd771
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: METRIC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 988f319d-37d3-4bff-94e4-e94e6d42cad7
+                    stepCounter: deb65676-39aa-492d-96d6-5bfec1fd920d
+                transform: ""
+          - columnReference:
+              columnCounter: a9927655-3c7d-48ce-9dc1-43cbef699d74
+              stepCounter: 4e3d0ca6-ed2f-4202-b390-5f7eb89dd771
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DIM_COUNTRY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f45c1400-9bec-443e-908b-a847848eaa52
+                    stepCounter: deb65676-39aa-492d-96d6-5bfec1fd920d
+                transform: ""
+          - columnReference:
+              columnCounter: 5e9cc636-22e2-4244-b4c8-b4df0f185ead
+              stepCounter: 4e3d0ca6-ed2f-4202-b390-5f7eb89dd771
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DIM_VERTICAL
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: befb53b8-8694-45ed-89b4-bcf4aa79dd7c
+                    stepCounter: deb65676-39aa-492d-96d6-5bfec1fd920d
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 35ffa302-ec04-4104-9aa4-47dc5ff7c5a4
+              stepCounter: 4e3d0ca6-ed2f-4202-b390-5f7eb89dd771
+            config: {}
+            contributor: true
+            dataType: ARRAY
+            defaultValue: ""
+            description: Generated Contribution Explorer Model
+            hashColumns: []
+            name: CONTRIBUTOR
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 8f6ab7f2-70f4-4f7d-b386-a1c279ad72c1
+              stepCounter: 4e3d0ca6-ed2f-4202-b390-5f7eb89dd771
+            config: {}
+            dataType: FLOAT
+            defaultValue: ""
+            description: Generated Contribution Explorer Model
+            hashColumns: []
+            metric_control: true
+            name: METRIC_CONTROL
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b5c7d887-2e07-4da6-b898-5165674896d2
+              stepCounter: 4e3d0ca6-ed2f-4202-b390-5f7eb89dd771
+            config: {}
+            dataType: FLOAT
+            defaultValue: ""
+            description: Generated Contribution Explorer Model
+            hashColumns: []
+            metric_test: true
+            name: METRIC_TEST
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 14e6db6b-aa32-477d-b022-ef647ca84bd4
+              stepCounter: 4e3d0ca6-ed2f-4202-b390-5f7eb89dd771
+            config: {}
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: Generated Contribution Explorer Model
+            hashColumns: []
+            name: SURPRISE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+            surprise: true
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7b3ac3b1-a04d-44e0-80b2-36df1d2bf3ed
+              stepCounter: 4e3d0ca6-ed2f-4202-b390-5f7eb89dd771
+            config: {}
+            dataType: FLOAT
+            defaultValue: ""
+            description: Generated Contribution Explorer Model
+            hashColumns: []
+            name: RELATIVE_CHANGE
+            nullable: true
+            relative_change: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 8c9c60df-2256-4787-a809-1eb6e0cff699
+              stepCounter: 4e3d0ca6-ed2f-4202-b390-5f7eb89dd771
+            config: {}
+            dataType: FLOAT
+            defaultValue: ""
+            description: Generated Contribution Explorer Model
+            growth_rate: true
+            hashColumns: []
+            name: GROWTH_RATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d898bea8-1bde-48c3-b5b6-65ca02b6d4c9
+              stepCounter: 4e3d0ca6-ed2f-4202-b390-5f7eb89dd771
+            config: {}
+            dataType: FLOAT
+            defaultValue: ""
+            description: Generated Contribution Explorer Model
+            expected_metric_test: true
+            hashColumns: []
+            name: EXPECTED_METRIC_TEST
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 00ae29f8-095c-422f-921c-e4d481fa44a6
+              stepCounter: 4e3d0ca6-ed2f-4202-b390-5f7eb89dd771
+            config: {}
+            dataType: FLOAT
+            defaultValue: ""
+            description: Generated Contribution Explorer Model
+            hashColumns: []
+            name: OVERALL_METRIC_CONTROL
+            nullable: true
+            overall_metric_control: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 4c936f32-ba7b-4eb8-9b7b-cd363272dd13
+              stepCounter: 4e3d0ca6-ed2f-4202-b390-5f7eb89dd771
+            config: {}
+            dataType: FLOAT
+            defaultValue: ""
+            description: Generated Contribution Explorer Model
+            hashColumns: []
+            name: OVERALL_METRIC_TEST
+            nullable: true
+            overall_metric_test: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 64da5392-7072-4e77-864b-ee19a07f38ee
+              stepCounter: 4e3d0ca6-ed2f-4202-b390-5f7eb89dd771
+            config: {}
+            dataType: FLOAT
+            defaultValue: ""
+            description: Generated Contribution Explorer Model
+            hashColumns: []
+            name: OVERALL_GROWTH_RATE
+            nullable: true
+            overall_growth_rate: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5787954b-0681-4885-ba01-703f4cf0ff21
+              stepCounter: 4e3d0ca6-ed2f-4202-b390-5f7eb89dd771
+            config: {}
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: Generated Contribution Explorer Model
+            hashColumns: []
+            name: NEW_IN_TEST
+            new_in_test: true
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6c7443a0-fee3-4611-9da5-3adf0dd0c7b7
+              stepCounter: 4e3d0ca6-ed2f-4202-b390-5f7eb89dd771
+            config: {}
+            dataType: BOOLEAN
+            defaultValue: ""
+            description: Generated Contribution Explorer Model
+            hashColumns: []
+            missing_in_test: true
+            name: MISSING_IN_TEST
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SOURCE
+                nodeName: INPUT_TABLE
+            join:
+              joinCondition: FROM {{ ref('SOURCE', 'INPUT_TABLE') }} "INPUT_TABLE"
+            name: VIEW__INPUT_TABLE
+            noLinkRefs: []
+      name: VIEW__INPUT_TABLE
+      overrideSQL: false
+      schema: ""
+      sqlType: "275"
+      type: sql
+    stepCounter: 4e3d0ca6-ed2f-4202-b390-5f7eb89dd771

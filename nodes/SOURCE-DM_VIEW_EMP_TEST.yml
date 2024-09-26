@@ -1,0 +1,189 @@
+steps:
+  DM_VIEW_EMP_TEST-4f6b6b54-f9c8-47a1-8683-d01211fb48ce:
+    operation:
+      config:
+        appendOnly: "true"
+        capUpdate: false
+        clsKey: Row Update Timestamp
+        clsKeyCus: ""
+        dmlCol:
+          columnCounter: 74af42b5-899e-4f88-a98a-0abac0e95d1f
+          stepCounter: 4f6b6b54-f9c8-47a1-8683-d01211fb48ce
+        dmlDelete: "0"
+        dmlInsert: "1"
+        dmlUpdate: Updating
+        flagSrcStream: false
+        initialRows: true
+        insertOnly: false
+        orderBy:
+          items:
+            - colName:
+                columnCounter: e9c6f58f-005c-4572-b67a-c54deaef530f
+                stepCounter: 4f6b6b54-f9c8-47a1-8683-d01211fb48ce
+              sortOrd: asc
+        orderByDateTime:
+          items:
+            - {}
+        partitionBy:
+          items:
+            - partColName:
+                columnCounter: dc879d47-eb82-4137-9905-c7d9cedcc688
+                stepCounter: 4f6b6b54-f9c8-47a1-8683-d01211fb48ce
+        postSQL: ""
+        preSQL: ""
+        predTask: ""
+        recordVersioning: Datetime Column
+        retainLastNonDeleteFlag: false
+        rootTask: ""
+        scheduleCRON: 5 0-23 * * * America/Los_Angeles
+        schedulePeriod: "1"
+        schedulePeriodOption: Minutes
+        schedulingMode: Serverless Task
+        serverlessSize: XSMALL
+        softDeleteFlag: false
+        sourceType: Table
+        whName: <WAREHOUSE_NAME>
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: SOURCE
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: dc879d47-eb82-4137-9905-c7d9cedcc688
+              stepCounter: 4f6b6b54-f9c8-47a1-8683-d01211fb48ce
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: EMPID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 4073d79f-8df4-4283-985c-804d160f3d4c
+                    stepCounter: a8e99f20-7e1e-4f6f-8f1c-c5523d0f2849
+                transform: ""
+          - columnReference:
+              columnCounter: 74af42b5-899e-4f88-a98a-0abac0e95d1f
+              stepCounter: 4f6b6b54-f9c8-47a1-8683-d01211fb48ce
+            dataType: VARCHAR(30)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: EMPNAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b6d66c95-30f2-4d6b-a385-dae06362bd74
+                    stepCounter: a8e99f20-7e1e-4f6f-8f1c-c5523d0f2849
+                transform: ""
+          - columnReference:
+              columnCounter: dc19da12-8def-4632-8217-21bf29e6952c
+              stepCounter: 4f6b6b54-f9c8-47a1-8683-d01211fb48ce
+            dataType: FLOAT
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SALARY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 8de5881e-ebd1-41a5-a9b9-6cfb45ddc404
+                    stepCounter: a8e99f20-7e1e-4f6f-8f1c-c5523d0f2849
+                transform: ""
+          - columnReference:
+              columnCounter: 40da2d23-22ed-46bb-a5ab-503c59081d0a
+              stepCounter: 4f6b6b54-f9c8-47a1-8683-d01211fb48ce
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: AGE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 76d69172-d1e8-481f-934e-36c6318e4b20
+                    stepCounter: a8e99f20-7e1e-4f6f-8f1c-c5523d0f2849
+                transform: ""
+          - columnReference:
+              columnCounter: 43b38165-a887-4201-b27d-fa714341920c
+              stepCounter: 4f6b6b54-f9c8-47a1-8683-d01211fb48ce
+            dataType: VARCHAR(10)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DEPT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3cec9b0c-5b90-4dff-8446-35a939e80038
+                    stepCounter: a8e99f20-7e1e-4f6f-8f1c-c5523d0f2849
+                transform: ""
+          - columnReference:
+              columnCounter: 726d3762-877b-4ebe-91f5-01a979661772
+              stepCounter: 4f6b6b54-f9c8-47a1-8683-d01211fb48ce
+            dataType: VARCHAR(20)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LOCATION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 190951f8-0fc4-48de-8462-ad213d3180a1
+                    stepCounter: a8e99f20-7e1e-4f6f-8f1c-c5523d0f2849
+                transform: ""
+          - columnReference:
+              columnCounter: e9c6f58f-005c-4572-b67a-c54deaef530f
+              stepCounter: 4f6b6b54-f9c8-47a1-8683-d01211fb48ce
+            dataType: TIMESTAMP_NTZ(9)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b2a63f82-aed9-4338-8958-f7ede49549b7
+                    stepCounter: a8e99f20-7e1e-4f6f-8f1c-c5523d0f2849
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d9bbbfdd-0c22-4d3d-a788-2b39e4105523
+              stepCounter: 4f6b6b54-f9c8-47a1-8683-d01211fb48ce
+            config: {}
+            dataType: timestamp
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            hmUpdTs: true
+            name: DM_UPDATE_TIMESTAMP
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: current_timestamp::timestamp_ntz
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - aliases: {}
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SOURCE
+                nodeName: EMP_TEST
+            join:
+              joinCondition: FROM {{ ref('SOURCE', 'EMP_TEST') }} "EMP_TEST"
+            name: DM_VIEW_EMP_TEST
+            noLinkRefs: []
+      name: DM_VIEW_EMP_TEST
+      overrideSQL: false
+      schema: ""
+      sqlType: "282"
+      type: sql
+    stepCounter: 4f6b6b54-f9c8-47a1-8683-d01211fb48ce

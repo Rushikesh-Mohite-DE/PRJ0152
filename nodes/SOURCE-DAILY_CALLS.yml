@@ -1,0 +1,93 @@
+steps:
+  DAILY_CALLS-932384c2-2107-4780-b03c-e4e432b202c9:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationName: SOURCE
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e48729c3-7736-47df-a9a3-2124154e3d2c
+              stepCounter: 932384c2-2107-4780-b03c-e4e432b202c9
+            config: {}
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: DATE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a6de77b6-69c0-4707-9d6a-19afa7c0b530
+              stepCounter: 932384c2-2107-4780-b03c-e4e432b202c9
+            config: {}
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: CALL_CENTER
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 4158bb23-5576-47d6-97c7-8cbb4249f138
+              stepCounter: 932384c2-2107-4780-b03c-e4e432b202c9
+            config: {}
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: CC_GROUP
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a8ca3bb6-80eb-401d-ab54-948365d2f556
+              stepCounter: 932384c2-2107-4780-b03c-e4e432b202c9
+            config: {}
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: PRODUCT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1ff2d281-8cda-411e-9d24-d9d694257568
+              stepCounter: 932384c2-2107-4780-b03c-e4e432b202c9
+            config: {}
+            dataType: NUMBER(18,0)
+            defaultValue: ""
+            description: ""
+            name: CALL_COUNT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SOURCE', 'DAILY_CALLS') }}
+      name: DAILY_CALLS
+      schema: ""
+      sqlType: Source
+      table: DAILY_CALLS
+      type: sourceInput
+    stepCounter: 932384c2-2107-4780-b03c-e4e432b202c9
